@@ -326,3 +326,5 @@ section{position:relative;padding:clamp(80px,12vw,160px) var(--pad)}
 .btns-row .btn--pdf{margin-top:0}
 .process__head+.process__hint{margin-top:0}
 .buyers .btn--ghost{color:inherit;border-color:currentColor}
+.partners__list li.has-logo b{display:flex;align-items:center;gap:12px}
+.partner-logo{width:64px;height:64px;flex:none;border-radius:50%}
