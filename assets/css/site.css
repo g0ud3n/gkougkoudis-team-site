@@ -301,3 +301,16 @@ section{position:relative;padding:clamp(80px,12vw,160px) var(--pad)}
 .inl{white-space:nowrap}.inl .ico{margin-right:4px}
 @media (max-width:640px){.social a span{display:none}.social a{padding:10px}.social a .ico{width:18px;height:18px}.social li:last-child a span{display:inline}}
 .ico[fill="none"]{fill:none}
+
+/* process: swipe carousel on tablets/phones */
+.process__hint{display:none;padding:0 var(--pad);margin:-32px 0 20px;font-size:13px;color:var(--bred);font-weight:600}
+.process__dots{display:none}
+@media (max-width:1000px){
+  .process__hint{display:block}
+  .process__track{width:auto;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;scroll-padding-left:var(--pad);padding-bottom:8px}
+  .process__track::-webkit-scrollbar{display:none}
+  .step{scroll-snap-align:start;width:min(380px,80vw)}
+  .process__dots{display:flex;gap:8px;justify-content:center;margin-top:24px}
+  .process__dots i{width:8px;height:8px;border-radius:50%;background:var(--navy);opacity:.25;transition:opacity .3s,transform .3s}
+  .process__dots i.on{opacity:1;transform:scale(1.3)}
+}

@@ -134,6 +134,29 @@
     document.querySelectorAll('.reveal').forEach(e => { e.style.opacity = 1; e.style.transform = 'none'; });
   }
 
+  // swipe carousel + gentle autoplay on tablets/phones
+  (function () {
+    const track = document.getElementById('track');
+    if (!track || window.innerWidth > 1000) return;
+    const steps = [...track.children];
+    const dots = document.createElement('div'); dots.className = 'process__dots';
+    dots.innerHTML = steps.map(() => '<i></i>').join(''); track.after(dots);
+    const di = [...dots.children];
+    const cur = () => Math.round(track.scrollLeft / (steps[1].offsetLeft - steps[0].offsetLeft));
+    const mark = () => di.forEach((d, i) => d.classList.toggle('on', i === Math.min(cur(), steps.length - 1)));
+    track.addEventListener('scroll', mark, { passive: true }); mark();
+    let user = false, timer = null;
+    ['touchstart', 'pointerdown', 'wheel'].forEach(ev => track.addEventListener(ev, () => { user = true; clearInterval(timer); }, { passive: true }));
+    const go = () => {
+      if (user) return;
+      const n = (cur() + 1) % steps.length;
+      track.scrollTo({ left: steps[n].offsetLeft - steps[0].offsetLeft, behavior: 'smooth' });
+    };
+    new IntersectionObserver(es => es.forEach(e => {
+      clearInterval(timer);
+      if (e.isIntersecting && !user) timer = setInterval(go, 3200);
+    }), { threshold: 0.5 }).observe(track);
+  })();
   /* ---------- listings ---------- */
   const TYPE = { 'apartments': 'Διαμέρισμα', 'studio-apartments': 'Γκαρσονιέρα', 'single-family-homes': 'Μονοκατοικία', 'stores': 'Κατάστημα', 'plots-of-land': 'Οικόπεδο', 'business': 'Επιχείρηση', 'commercial-buildings': 'Επαγγελματικό κτίριο', 'offices': 'Γραφείο', 'maisonettes': 'Μεζονέτα' };
   const typeName = l => { for (const t of l.types) if (TYPE[t]) return TYPE[t]; return l.types.includes('land') ? 'Γη' : l.types.includes('commercial') ? 'Επαγγελματικό' : 'Ακίνητο'; };
