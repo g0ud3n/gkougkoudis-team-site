@@ -102,7 +102,7 @@
   if (hasGsap) {
     gsap.from('.hero .split .w>span', { yPercent: reduced ? 0 : 110, opacity: reduced ? 0 : 1, duration: 1.3, ease: 'power4.out', stagger: 0.07, delay: 0.2 });
     gsap.to('.hero .reveal', { opacity: 1, y: 0, duration: 1.2, delay: 0.8, ease: 'power3.out' });
-    gsap.from('.hero__card, .hero__down', { opacity: 0, y: 20, duration: 1, delay: 1.3 });
+    gsap.from('.hero__team', { opacity: 0, y: reduced ? 0 : 60, duration: 1.6, delay: 0.6, ease: 'power3.out' });
     gsap.utils.toArray('.statement__line span').forEach(s => {
       gsap.from(s, { yPercent: reduced ? 0 : 105, opacity: reduced ? 0 : 1, duration: 1.2, ease: 'power4.out', scrollTrigger: { trigger: s, start: 'top 88%' } });
     });
@@ -212,9 +212,7 @@
     LIST = d.listings.filter(l => l.photos && l.photos.length);
     render();
     const n = LIST.length;
-    document.getElementById('heroCount').textContent = n;
     const nl = document.getElementById('numListings'); nl.dataset.count = n; nl.textContent = n;
-    if (LIST[0]) document.getElementById('heroCardImg').style.backgroundImage = `url("${LIST.find(l => l.purpose === 'sale').photos[0]}")`;
     const up = d.updated ? new Date(d.updated) : null;
     document.getElementById('updated').textContent = up ? up.toLocaleDateString('el-GR', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
   }).catch(() => { grid.innerHTML = '<p class="grid__empty">Δείτε τα ακίνητα στο remax-deltaktima.gr.</p>'; });

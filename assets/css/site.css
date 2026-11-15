@@ -43,7 +43,7 @@ section{position:relative;padding:clamp(80px,12vw,160px) var(--pad)}
 .menu[hidden]{display:none}
 
 /* hero */
-.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding-top:120px;overflow:hidden;background:radial-gradient(120% 90% at 50% 40%,#061a4d 0%,var(--navy) 45%,var(--ink) 100%)}
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;padding-top:clamp(100px,14vh,150px);padding-bottom:0;overflow:hidden;background:radial-gradient(120% 90% at 50% 40%,#061a4d 0%,var(--navy) 45%,var(--ink) 100%)}
 .hero__gl{position:absolute;inset:0;width:100%;height:100%}
 .hero__fallback{position:absolute;inset:0;background:url(../img/grafeio-ypodoxi.jpg) center/cover;opacity:0;transition:opacity 1s}
 .hero.no-gl .hero__fallback{opacity:.28}
@@ -281,3 +281,16 @@ section{position:relative;padding:clamp(80px,12vw,160px) var(--pad)}
 }
 @media (prefers-reduced-motion:reduce){.hero__down{animation:none}}
 .card__price small{font-size:13px;opacity:.7;margin-left:3px;font-family:var(--sans)}
+
+/* team photo in hero + footer, social links */
+.hero__team{position:relative;z-index:2;margin-top:auto;width:min(1100px,96vw)}
+.hero__team img{width:100%;height:auto;filter:drop-shadow(0 -10px 40px rgba(0,8,31,.6))}
+.hero__sub{margin-top:18px}
+.social{list-style:none;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:24px 0 28px}
+.social a{display:inline-block;text-decoration:none;font-size:14px;font-weight:500;padding:8px 16px;border:1px solid var(--line);border-radius:99px;transition:background .3s,color .3s,border-color .3s}
+.social a:hover{background:var(--cream);color:var(--navy);border-color:var(--cream)}
+.foot__team{width:min(1000px,100%);margin:0 auto;border-bottom:1px solid var(--line)}
+.foot__team img{width:100%;height:auto}
+.social--foot{margin:28px 0 48px}
+.foot{text-align:left}
+@media (max-width:640px){.hero__sub{font-size:14px}.social a{font-size:13px;padding:7px 12px}}
