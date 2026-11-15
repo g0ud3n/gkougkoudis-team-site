@@ -139,8 +139,13 @@
   const typeName = l => { for (const t of l.types) if (TYPE[t]) return TYPE[t]; return l.types.includes('land') ? 'Γη' : l.types.includes('commercial') ? 'Επαγγελματικό' : 'Ακίνητο'; };
   const area = a => (a || '').split(', Ν.')[0].replace(/^Κέντρο, /, 'Κέντρο · ');
   const esc = s => String(s || '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-  const CAPS = { 'ΠΩΛΕΙΤΑΙ': 'Πωλείται', 'ΕΝΟΙΚΙΑΖΕΤΑΙ': 'Ενοικιάζεται', 'ΥΠΕΥΘΥΝΟΣ ΣΥΝΕΡΓΑΤΗΣ': 'Υπεύθυνος συνεργάτης', 'ΠΡΟΣΟΧΗ': 'Προσοχή', 'ΕΥΚΑΙΡΙΑ': 'Ευκαιρία' };
-  const tidy = s => (s || '').replace(/ΠΩΛΕΙΤΑΙ|ΕΝΟΙΚΙΑΖΕΤΑΙ|ΥΠΕΥΘΥΝΟΣ ΣΥΝΕΡΓΑΤΗΣ|ΠΡΟΣΟΧΗ|ΕΥΚΑΙΡΙΑ/g, m => CAPS[m]).replace(/\s+/g, ' ').replace(/\.(?=[Α-ΩA-Z])/g, '. ').trim();
+  const CAPS = { 'ΠΩΛΕΙΤΑΙ': 'Πωλείται', 'ΕΝΟΙΚΙΑΖΕΤΑΙ': 'Ενοικιάζεται', 'ΥΠΕΥΘΥΝΟΣ ΣΥΝΕΡΓΑΤΗΣ': 'Υπεύθυνος συνεργάτης', 'ΠΡΟΣΟΧΗ': 'Προσοχή', 'ΕΥΚΑΙΡΙΑ': 'Ευκαιρία',
+    'ΜΟΝΑΔΙΚΟ ΠΛΕΟΝΕΚΤΗΜΑ': 'Μοναδικό πλεονέκτημα', 'ΤΙΜΗ': 'Τιμή', 'ΚΑΙ': 'και', 'ΜΙΣΘΩΜΑ': 'μίσθωμα', 'ΑΦΡΟΔΙΤΗ ΒΑΣΙΛΕΙΟΥ ΜΑΚΡΗ': 'Αφροδίτη Βασιλείου Μακρή', 'MAIL': 'mail' };
+  const CAPS_RE = new RegExp('(?<![Α-Ωα-ωΆ-ώA-Za-z])(?:' + Object.keys(CAPS).sort((a, b) => b.length - a.length).join('|') + ')(?![Α-Ωα-ωΆ-ώA-Za-z])', 'g');
+  const tidy = s => (s || '').replace(CAPS_RE, m => CAPS[m])
+    .replace(/\s+/g, ' ').replace(/\.(?=[Α-ΩA-Z])/g, '. ')
+    .trim();
+  const priceNum = l => parseInt(String(l.price || '').replace(/[^0-9]/g, ''), 10) || 0;
   let LIST = [];
   const grid = document.getElementById('grid');
 
@@ -209,7 +214,7 @@
   mImg.addEventListener('touchend', e => { const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 40) document.getElementById(dx < 0 ? 'mNext' : 'mPrev').click(); });
 
   fetch('data/listings.json', { cache: 'no-cache' }).then(r => r.json()).then(d => {
-    LIST = d.listings.filter(l => l.photos && l.photos.length);
+    LIST = d.listings.filter(l => l.photos && l.photos.length).sort((a, b) => priceNum(b) - priceNum(a));
     render();
     const n = LIST.length;
     const nl = document.getElementById('numListings'); nl.dataset.count = n; nl.textContent = n;
