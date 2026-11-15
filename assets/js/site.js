@@ -139,7 +139,8 @@
   const typeName = l => { for (const t of l.types) if (TYPE[t]) return TYPE[t]; return l.types.includes('land') ? 'Γη' : l.types.includes('commercial') ? 'Επαγγελματικό' : 'Ακίνητο'; };
   const area = a => (a || '').split(', Ν.')[0].replace(/^Κέντρο, /, 'Κέντρο · ');
   const esc = s => String(s || '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-  const tidy = s => (s || '').replace(/\s+/g, ' ').replace(/\.(?=[Α-ΩA-Z])/g, '. ').trim();
+  const CAPS = { 'ΠΩΛΕΙΤΑΙ': 'Πωλείται', 'ΕΝΟΙΚΙΑΖΕΤΑΙ': 'Ενοικιάζεται', 'ΥΠΕΥΘΥΝΟΣ ΣΥΝΕΡΓΑΤΗΣ': 'Υπεύθυνος συνεργάτης', 'ΠΡΟΣΟΧΗ': 'Προσοχή', 'ΕΥΚΑΙΡΙΑ': 'Ευκαιρία' };
+  const tidy = s => (s || '').replace(/ΠΩΛΕΙΤΑΙ|ΕΝΟΙΚΙΑΖΕΤΑΙ|ΥΠΕΥΘΥΝΟΣ ΣΥΝΕΡΓΑΤΗΣ|ΠΡΟΣΟΧΗ|ΕΥΚΑΙΡΙΑ/g, m => CAPS[m]).replace(/\s+/g, ' ').replace(/\.(?=[Α-ΩA-Z])/g, '. ').trim();
   let LIST = [];
   const grid = document.getElementById('grid');
 
@@ -147,7 +148,7 @@
     grid.innerHTML = LIST.map((l, i) => `
       <button class="card reveal" data-i="${i}" data-p="${l.purpose}" data-types="${l.types.join(' ')}">
         <div class="card__img">${l.photos[0] ? `<img src="${esc(l.photos[0])}" alt="${esc(typeName(l))} ${esc(l.sqm)} τ.μ." loading="lazy">` : ''}
-          <span class="card__tag ${l.purpose === 'rent' ? 'card__tag--rent' : ''}">${l.purpose === 'rent' ? 'ΕΝΟΙΚΙΑΖΕΤΑΙ' : 'ΠΩΛΕΙΤΑΙ'}</span></div>
+          <span class="card__tag ${l.purpose === 'rent' ? 'card__tag--rent' : ''}">${l.purpose === 'rent' ? 'Ενοικιάζεται' : 'Πωλείται'}</span></div>
         <div class="card__body">
           <span class="card__title">${esc(typeName(l))} ${esc(l.sqm)} τ.μ.</span>
           <span class="card__price">${esc(l.price)}${l.purpose === 'rent' && l.price ? '<small>/μήνα</small>' : ''}</span>
@@ -181,7 +182,7 @@
   function show() { mImg.src = cur.photos[ph] || ''; document.getElementById('mCnt').textContent = cur.photos.length ? `${ph + 1} / ${cur.photos.length}` : ''; }
   function openModal(i) {
     cur = LIST[i]; ph = 0;
-    document.getElementById('mEyebrow').textContent = (cur.purpose === 'rent' ? 'ΕΝΟΙΚΙΑΖΕΤΑΙ' : 'ΠΩΛΕΙΤΑΙ') + ' · ΚΩΔ. ' + cur.code;
+    document.getElementById('mEyebrow').textContent = (cur.purpose === 'rent' ? 'Ενοικιάζεται' : 'Πωλείται') + ' · κωδ. ' + cur.code;
     document.getElementById('mTitle').textContent = `${typeName(cur)} ${cur.sqm} τ.μ.`;
     document.getElementById('mPrice').textContent = cur.price + (cur.purpose === 'rent' && cur.price ? ' / μήνα' : '');
     const facts = [['Περιοχή', area(cur.address)], ['Εμβαδόν', cur.sqm + ' τ.μ.'], ['Όροφος', cur.floor], ['Έτος κατασκευής', cur.year], ['Υπνοδωμάτια', cur.bedrooms], ['Μπάνια', cur.baths]]
