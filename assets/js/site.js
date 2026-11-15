@@ -18,7 +18,7 @@
   function ribbons() {
     const canvas = document.getElementById('gl');
     const hero = document.getElementById('hero');
-    if (!window.THREE || reduced) { hero.classList.add('no-gl'); return; }
+    if (!window.THREE) { hero.classList.add('no-gl'); return; }
     let renderer;
     try { renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true }); }
     catch (e) { hero.classList.add('no-gl'); return; }
@@ -83,9 +83,10 @@
       if (!visible) return;
       const t = clock.getElapsedTime();
       scrollK = Math.min(window.scrollY / innerHeight, 1);
-      group.children.forEach(m => { m.rotation.y += m.userData.spin * 0.016; });
-      group.rotation.x += ((my * 0.25 + scrollK * 0.5) - group.rotation.x) * 0.04;
-      group.rotation.z += ((-mx * 0.2) - group.rotation.z) * 0.04;
+      group.children.forEach(m => { m.rotation.y += m.userData.spin * (reduced ? 0.006 : 0.016); });
+      const pm = reduced ? 0 : 1;
+      group.rotation.x += ((my * 0.25 * pm + scrollK * 0.5) - group.rotation.x) * 0.04;
+      group.rotation.z += ((-mx * 0.2 * pm) - group.rotation.z) * 0.04;
       group.position.y = scrollK * 2.5;
       rim.position.x = Math.sin(t * 0.4) * 9;
       renderer.render(scene, camera);
@@ -97,12 +98,13 @@
   document.querySelectorAll('.split').forEach(el => {
     el.innerHTML = el.textContent.trim().split(/\s+/).map(w => `<span class="w"><span>${w}</span></span>`).join(' ');
   });
-  if (hasGsap && !reduced) {
-    gsap.from('.hero .split .w>span', { yPercent: 110, duration: 1.3, ease: 'power4.out', stagger: 0.07, delay: 0.2 });
+  const Y = reduced ? 0 : 30;
+  if (hasGsap) {
+    gsap.from('.hero .split .w>span', { yPercent: reduced ? 0 : 110, opacity: reduced ? 0 : 1, duration: 1.3, ease: 'power4.out', stagger: 0.07, delay: 0.2 });
     gsap.to('.hero .reveal', { opacity: 1, y: 0, duration: 1.2, delay: 0.8, ease: 'power3.out' });
     gsap.from('.hero__card, .hero__down', { opacity: 0, y: 20, duration: 1, delay: 1.3 });
     gsap.utils.toArray('.statement__line span').forEach(s => {
-      gsap.from(s, { yPercent: 105, duration: 1.2, ease: 'power4.out', scrollTrigger: { trigger: s, start: 'top 88%' } });
+      gsap.from(s, { yPercent: reduced ? 0 : 105, opacity: reduced ? 0 : 1, duration: 1.2, ease: 'power4.out', scrollTrigger: { trigger: s, start: 'top 88%' } });
     });
     ScrollTrigger.batch('.reveal:not(.hero .reveal)', {
       start: 'top 88%',
@@ -153,7 +155,7 @@
         </div>
       </button>`).join('') || '<p class="grid__empty">Τα ακίνητα φορτώνουν…</p>';
     grid.querySelectorAll('.card').forEach(c => c.addEventListener('click', () => openModal(+c.dataset.i)));
-    if (hasGsap && !reduced) {
+    if (hasGsap) {
       ScrollTrigger.batch(grid.querySelectorAll('.reveal'), { start: 'top 92%', onEnter: b => gsap.to(b, { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.06 }) });
       ScrollTrigger.refresh();
     } else grid.querySelectorAll('.reveal').forEach(e => { e.style.opacity = 1; e.style.transform = 'none'; });
