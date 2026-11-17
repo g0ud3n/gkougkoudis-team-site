@@ -1,13 +1,13 @@
 {
  "source": "remax-deltaktima.gr",
- "updated": "2026-11-16T12:45:21+00:00",
+ "updated": "2026-11-17T13:24:33+00:00",
  "count": 32,
  "listings": [
   {
    "id": 81706,
    "url": "https://www.remax-deltaktima.gr/properties/house-80-sq-m-for-sale-3/",
    "title": "ΠΩΛΕΙΤΑΙ κατά αποκλειστικότητα μονοκατοικία συνολικής επιφάνειας 80 τ.μ.",
-   "date": "2026-11-16T13:24:14",
+   "date": "2026-11-17T13:22:54",
    "purpose": "sale",
    "types": [
     "housing",
@@ -53,7 +53,7 @@
    "id": 81692,
    "url": "https://www.remax-deltaktima.gr/properties/apartment-135-sq-m-for-rent/",
    "title": "ΕΝΟΙΚΙΑΖΕΤΑΙ κατά αποκλειστικότητα διαμέρισμα στον 2ο όροφο συνολικής επιφάνειας 135 τ.μ.",
-   "date": "2026-11-16T13:24:13",
+   "date": "2026-11-17T13:22:53",
    "purpose": "rent",
    "types": [
     "apartments",
@@ -88,7 +88,7 @@
    "id": 81704,
    "url": "https://www.remax-deltaktima.gr/properties/shop-93-sq-m-for-rent/",
    "title": "ΕΝΟΙΚΙΑΖΕΤΑΙ κατά αποκλειστικότητα ισόγειο κατάστημα συνολικής επιφάνειας 93 τ.μ.",
-   "date": "2026-11-16T13:24:13",
+   "date": "2026-11-17T13:22:53",
    "purpose": "rent",
    "types": [
     "commercial",
@@ -119,7 +119,7 @@
    "id": 81684,
    "url": "https://www.remax-deltaktima.gr/properties/apartment-20-sq-m-for-rent/",
    "title": "ΕΝΟΙΚΙΑΖΕΤΑΙ κατά αποκλειστικότητα διαμέρισμα στον 5ο όροφο συνολικής επιφάνειας 20 τ.μ.",
-   "date": "2026-11-16T13:24:12",
+   "date": "2026-11-17T13:22:52",
    "purpose": "rent",
    "types": [
     "apartments",
@@ -150,7 +150,7 @@
    "id": 81184,
    "url": "https://www.remax-deltaktima.gr/properties/studio-18-sq-m-for-sale/",
    "title": "ΠΩΛΕΙΤΑΙ κατά αποκλειστικότητα επιπλωμένη γκαρσονιέρα στον 5ο όροφο συνολικής επιφάνειας 18 τ.μ.",
-   "date": "2026-11-16T13:24:02",
+   "date": "2026-11-17T13:22:43",
    "purpose": "sale",
    "types": [
     "studio-apartments",
@@ -178,7 +178,7 @@
    "id": 79778,
    "url": "https://www.remax-deltaktima.gr/properties/studio-18-sq-m-for-rent/",
    "title": "ΕΝΟΙΚΙΑΖΕΤΑΙ κατά αποκλειστικότητα επιπλωμένη γκαρσονιέρα στον 5ο όροφο συνολικής επιφάνειας 18 τ.μ.",
-   "date": "2026-11-16T13:22:44",
+   "date": "2026-11-17T13:22:37",
    "purpose": "rent",
    "types": [
     "studio-apartments",
@@ -208,7 +208,7 @@
    "id": 78676,
    "url": "https://www.remax-deltaktima.gr/properties/apartment-60-sq-m-for-sale/",
    "title": "ΠΩΛΕΙΤΑΙ κατά αποκλειστικότητα διαμέρισμα  5ου ορόφου συνολικής επιφάνειας 60 τ.μ.",
-   "date": "2026-11-16T13:22:42",
+   "date": "2026-11-17T13:22:35",
    "purpose": "sale",
    "types": [
     "apartments",
@@ -249,10 +249,37 @@
    ]
   },
   {
+   "id": 80390,
+   "url": "https://www.remax-deltaktima.gr/properties/plot-2097-sq-m-for-sale/",
+   "title": "ΠΩΛΕΙΤΑΙ κατά αποκλειστικότητα οικοδομήσιμο οικόπεδο συνολικής επιφάνειας 2097 τ.μ.\nΥΠΕΥΘΥΝΟΣ ΣΥΝΕΡΓΑΤΗΣ: ΒΑΣΙΛΕΙΟΥ ΜΑΚΡΗ ΑΦΡΟΔΙΤΗ\nE-MAIL: avasileiou@remax-deltaktima.gr",
+   "date": "2026-11-17T13:22:32",
+   "purpose": "sale",
+   "types": [
+    "land",
+    "plots-of-land"
+   ],
+   "code": "4368-9324",
+   "address": "Συκούριο, Νέσσωνας, Ν. Λάρισας, 40006",
+   "sqm": "2097",
+   "year": "0",
+   "floor": "Υπόγειο",
+   "bedrooms": "0",
+   "baths": "0",
+   "energy": "Σε εξέλιξη",
+   "price": "39.000 €",
+   "agent": "ΤΕΑΜ Γκουγκούδης",
+   "description": "ΠΩΛΕΙΤΑΙ  κατά αποκλειστικότητα οικοδομήσιμο   οικόπεδο συνολικής επιφάνειας 2097 τ.μ.",
+   "photos": [
+    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-93241953.jpg",
+    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-93247171.jpg",
+    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-93243173.jpg"
+   ]
+  },
+  {
    "id": 81487,
    "url": "https://www.remax-deltaktima.gr/properties/apartment-100-sq-m-for-rent/",
    "title": "ΕΝΟΙΚΙΑΖΕΤΑΙ κατά αποκλειστικότητα διαμέρισμα στον 1ο όροφο συνολικής επιφάνειας 100 τ.μ.",
-   "date": "2026-11-16T13:22:40",
+   "date": "2026-11-17T13:22:32",
    "purpose": "rent",
    "types": [
     "apartments",
@@ -287,37 +314,10 @@
    ]
   },
   {
-   "id": 80390,
-   "url": "https://www.remax-deltaktima.gr/properties/plot-2097-sq-m-for-sale/",
-   "title": "ΠΩΛΕΙΤΑΙ κατά αποκλειστικότητα οικοδομήσιμο οικόπεδο συνολικής επιφάνειας 2097 τ.μ.\nΥΠΕΥΘΥΝΟΣ ΣΥΝΕΡΓΑΤΗΣ: ΒΑΣΙΛΕΙΟΥ ΜΑΚΡΗ ΑΦΡΟΔΙΤΗ\nE-MAIL: avasileiou@remax-deltaktima.gr",
-   "date": "2026-11-16T13:22:39",
-   "purpose": "sale",
-   "types": [
-    "land",
-    "plots-of-land"
-   ],
-   "code": "4368-9324",
-   "address": "Συκούριο, Νέσσωνας, Ν. Λάρισας, 40006",
-   "sqm": "2097",
-   "year": "0",
-   "floor": "Υπόγειο",
-   "bedrooms": "0",
-   "baths": "0",
-   "energy": "Σε εξέλιξη",
-   "price": "39.000 €",
-   "agent": "ΤΕΑΜ Γκουγκούδης",
-   "description": "ΠΩΛΕΙΤΑΙ  κατά αποκλειστικότητα οικοδομήσιμο   οικόπεδο συνολικής επιφάνειας 2097 τ.μ.",
-   "photos": [
-    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-93241953.jpg",
-    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-93247171.jpg",
-    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-93243173.jpg"
-   ]
-  },
-  {
    "id": 78914,
    "url": "https://www.remax-deltaktima.gr/properties/shop-117-sq-m-for-rent/",
    "title": "ΕΝΟΙΚΙΑΖΕΤΑΙ κατά αποκλειστικότητα κατάστημα ισόγειο συνολικής επιφάνειας 117 τ.μ.\nΥΠΕΥΘΥΝΟΣ ΣΥΝΕΡΓΑΤΗΣ: ΒΑΣΙΛΕΙΟΥ ΜΑΚΡΗ ΑΦΡΟΔΙΤΗ\nE-MAIL: avasileiou@remax-deltaktima.gr",
-   "date": "2026-11-16T13:22:39",
+   "date": "2026-11-17T13:22:31",
    "purpose": "rent",
    "types": [
     "commercial",
@@ -356,7 +356,7 @@
    "id": 81422,
    "url": "https://www.remax-deltaktima.gr/properties/shop-2949-sq-m-for-sale/",
    "title": "ΠΩΛΕΙΤΑΙ κατά αποκλειστικότητα κατάστημα ισόγειο συνολικής επιφάνειας 2949 τ.μ. σε οικόπεδο 11659 τ.μ.",
-   "date": "2026-11-16T13:22:11",
+   "date": "2026-11-17T13:22:05",
    "purpose": "sale",
    "types": [
     "commercial",
@@ -401,7 +401,7 @@
    "id": 73979,
    "url": "https://www.remax-deltaktima.gr/properties/apartment-30-sq-m-for-rent-2/",
    "title": "ΕΝΟΙΚΙΑΖΕΤΑΙ κατά αποκλειστικότητα διαμέρισμα στον 4ο όροφο συνολικής επιφάνειας 30 τ.μ.",
-   "date": "2026-11-16T13:22:10",
+   "date": "2026-11-17T13:22:04",
    "purpose": "rent",
    "types": [
     "apartments",
@@ -430,7 +430,7 @@
    "id": 79191,
    "url": "https://www.remax-deltaktima.gr/properties/shop-192-sq-m-for-rent/",
    "title": "ΕΝΟΙΚΙΑΖΕΤΑΙ κατά αποκλειστικότητα κατάστημα ισόγειο συνολικής επιφάνειας 192 τ.μ.",
-   "date": "2026-11-16T13:22:06",
+   "date": "2026-11-17T13:21:00",
    "purpose": "rent",
    "types": [
     "commercial",
@@ -463,10 +463,40 @@
    ]
   },
   {
+   "id": 80351,
+   "url": "https://www.remax-deltaktima.gr/properties/shop-60-sq-m-for-rent/",
+   "title": "ΕΝΟΙΚΙΑΖΕΤΑΙ κατά αποκλειστικότητα κατάστημα ισόγειο συνολικής επιφάνειας 60 τ.μ.\nΥΠΕΥΘΥΝΟΣ ΣΥΝΕΡΓΑΤΗΣ: ΒΑΣΙΛΕΙΟΥ ΜΑΚΡΗ ΑΦΡΟΔΙΤΗ\nE-MAIL: avasileiou@remax-deltaktima.gr",
+   "date": "2026-11-17T13:20:55",
+   "purpose": "rent",
+   "types": [
+    "commercial",
+    "stores"
+   ],
+   "code": "4368-9018",
+   "address": "Κέντρο, Κιλελέρ, Ν. Λάρισας, 415 00",
+   "sqm": "60",
+   "year": "2000",
+   "floor": "Ισόγειο",
+   "bedrooms": "0",
+   "baths": "0",
+   "energy": "Η",
+   "price": "450 €",
+   "agent": "ΤΕΑΜ Γκουγκούδης",
+   "description": "ΕΝΟΙΚΙΑΖΕΤΑΙ  κατά αποκλειστικότητα   κατάστημα  ισόγειο συνολικής επιφάνειας 60 τ.μ.Υπάρχει η δυνατότητα επεκτάσης τετραγωνικών.",
+   "photos": [
+    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-90184056.jpg",
+    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-90182096.jpg",
+    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-90189968.jpg",
+    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-90189613.jpg",
+    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-90187330.jpg",
+    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-90189784.jpg"
+   ]
+  },
+  {
    "id": 80358,
    "url": "https://www.remax-deltaktima.gr/properties/shop-100-sq-m-for-rent/",
    "title": "ΕΝΟΙΚΙΑΖΕΤΑΙ κατά αποκλειστικότητα κατάστημα ισόγειο συνολικής επιφάνειας 100 τ.μ.\nΥΠΕΥΘΥΝΟΣ ΣΥΝΕΡΓΑΤΗΣ: ΒΑΣΙΛΕΙΟΥ ΜΑΚΡΗ ΑΦΡΟΔΙΤΗ\nE-MAIL: avasileiou@remax-deltaktima.gr",
-   "date": "2026-11-16T13:22:02",
+   "date": "2026-11-17T13:20:55",
    "purpose": "rent",
    "types": [
     "commercial",
@@ -499,40 +529,10 @@
    ]
   },
   {
-   "id": 80351,
-   "url": "https://www.remax-deltaktima.gr/properties/shop-60-sq-m-for-rent/",
-   "title": "ΕΝΟΙΚΙΑΖΕΤΑΙ κατά αποκλειστικότητα κατάστημα ισόγειο συνολικής επιφάνειας 60 τ.μ.\nΥΠΕΥΘΥΝΟΣ ΣΥΝΕΡΓΑΤΗΣ: ΒΑΣΙΛΕΙΟΥ ΜΑΚΡΗ ΑΦΡΟΔΙΤΗ\nE-MAIL: avasileiou@remax-deltaktima.gr",
-   "date": "2026-11-16T13:21:02",
-   "purpose": "rent",
-   "types": [
-    "commercial",
-    "stores"
-   ],
-   "code": "4368-9018",
-   "address": "Κέντρο, Κιλελέρ, Ν. Λάρισας, 415 00",
-   "sqm": "60",
-   "year": "2000",
-   "floor": "Ισόγειο",
-   "bedrooms": "0",
-   "baths": "0",
-   "energy": "Η",
-   "price": "450 €",
-   "agent": "ΤΕΑΜ Γκουγκούδης",
-   "description": "ΕΝΟΙΚΙΑΖΕΤΑΙ  κατά αποκλειστικότητα   κατάστημα  ισόγειο συνολικής επιφάνειας 60 τ.μ.Υπάρχει η δυνατότητα επεκτάσης τετραγωνικών.",
-   "photos": [
-    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-90184056.jpg",
-    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-90182096.jpg",
-    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-90189968.jpg",
-    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-90189613.jpg",
-    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-90187330.jpg",
-    "https://www.remax-deltaktima.gr/wp-content/uploads/2026/10/4368-90189784.jpg"
-   ]
-  },
-  {
    "id": 67902,
    "url": "https://www.remax-deltaktima.gr/properties/shop-165-sq-m-for-rent/",
    "title": "ΕΝΟΙΚΙΑΖΕΤΑΙ κατά αποκλειστικότητα ισόγειο κατάστημα – χώρος γραφείων συνολικής επιφάνειας 165 τ.μ.",
-   "date": "2026-11-16T13:20:45",
+   "date": "2026-11-17T13:20:39",
    "purpose": "rent",
    "types": [
     "commercial",
@@ -575,7 +575,7 @@
    "id": 80320,
    "url": "https://www.remax-deltaktima.gr/properties/shop-70-sq-m-for-sale/",
    "title": "ΠΩΛΕΙΤΑΙ κατά αποκλειστικότητα κατάστημα υπόγειο συνολικής επιφάνειας 70 τ.μ. \nΥΠΕΥΘΥΝΟΣ ΣΥΝΕΡΓΑΤΗΣ: ΒΑΣΙΛΕΙΟΥ ΜΑΚΡΗ ΑΦΡΟΔΙΤΗ\nE-MAIL: avasileioy@remax-deltaktima.gr",
-   "date": "2026-11-16T13:20:39",
+   "date": "2026-11-17T13:20:32",
    "purpose": "sale",
    "types": [
     "commercial",
@@ -607,7 +607,7 @@
    "id": 66962,
    "url": "https://www.remax-deltaktima.gr/properties/shop-60-sq-m-for-sale/",
    "title": "ΠΩΛΕΙΤΑΙ κατά αποκλειστικότητα κατάστημα ισόγειο συνολικής επιφάνειας 60 τ.μ.",
-   "date": "2026-11-16T13:20:32",
+   "date": "2026-11-17T13:20:26",
    "purpose": "sale",
    "types": [
     "commercial",
@@ -636,7 +636,7 @@
    "id": 64739,
    "url": "https://www.remax-deltaktima.gr/properties/plot-1423-sq-m-for-sale/",
    "title": "ΠΩΛΕΙΤΑΙ κατά αποκλειστικότητα οικόπεδο συνολικής επιφάνειας 1423 τ.μ.",
-   "date": "2026-11-16T13:20:28",
+   "date": "2026-11-17T13:20:21",
    "purpose": "sale",
    "types": [
     "land",
@@ -663,7 +663,7 @@
    "id": 62821,
    "url": "https://www.remax-deltaktima.gr/properties/shop-71-sq-m-for-rent/",
    "title": "ΕΝΟΙΚΙΑΖΕΤΑΙ κατά αποκλειστικότητα κατάστημα ισόγειο συνολικής επιφάνειας 71 τ.μ.",
-   "date": "2026-11-16T13:20:25",
+   "date": "2026-11-17T13:20:18",
    "purpose": "rent",
    "types": [
     "commercial",
@@ -690,7 +690,7 @@
    "id": 68538,
    "url": "https://www.remax-deltaktima.gr/properties/house-80-sq-m-for-sale/",
    "title": "ΠΩΛΕΙΤΑΙ κατά αποκλειστικότητα μονοκατοικία συνολικής επιφάνειας 79.69 τ.μ.",
-   "date": "2026-11-16T13:20:09",
+   "date": "2026-11-17T13:20:05",
    "purpose": "sale",
    "types": [
     "housing",
@@ -739,7 +739,7 @@
    "id": 75408,
    "url": "https://www.remax-deltaktima.gr/properties/apartment-127-sq-m-for-sale/",
    "title": "ΠΩΛΕΙΤΑΙ κατά αποκλειστικότητα διαμέρισμα στον 3ο όροφο συνολικής επιφάνειας 127 τ.μ.",
-   "date": "2026-11-16T13:20:03",
+   "date": "2026-11-17T13:18:59",
    "purpose": "sale",
    "types": [
     "apartments",
@@ -784,7 +784,7 @@
    "id": 57598,
    "url": "https://www.remax-deltaktima.gr/properties/apartment-55-sq-m-for-rent/",
    "title": "ΕΝΟΙΚΙΑΖΕΤΑΙ κατά αποκλειστικότητα διαμέρισμα στον 2ο όροφο συνολικής επιφάνειας 55 τ.μ.",
-   "date": "2026-11-16T13:18:59",
+   "date": "2026-11-17T13:18:56",
    "purpose": "rent",
    "types": [
     "apartments",
@@ -822,7 +822,7 @@
    "id": 61937,
    "url": "https://www.remax-deltaktima.gr/properties/business-55-sq-m-for-sale/",
    "title": "ΠΩΛΕΙΤΑΙ κατά αποκλειστικότητα επιχείρηση ισόγειο συνολικής επιφάνειας 55 τ.μ. ( Κατάστημα Υποδημάτων )",
-   "date": "2026-11-16T13:18:55",
+   "date": "2026-11-17T13:18:52",
    "purpose": "sale",
    "types": [
     "commercial",
@@ -853,7 +853,7 @@
    "id": 78625,
    "url": "https://www.remax-deltaktima.gr/properties/house-350-sq-m-for-sale-2/",
    "title": "ΠΩΛΕΙΤΑΙ κατά αποκλειστικότητα μονοκατοικία ισόγειο συνολικής επιφάνειας 350 τ.μ",
-   "date": "2026-11-16T13:18:52",
+   "date": "2026-11-17T13:18:49",
    "purpose": "sale",
    "types": [
     "housing",
@@ -901,7 +901,7 @@
    "id": 55041,
    "url": "https://www.remax-deltaktima.gr/properties/shop-58-sq-m-for-sale/",
    "title": "ΠΩΛΕΙΤΑΙ κατά αποκλειστικότητα διαμπερές εμπορικό κατάστημα συνολικής επιφάνειας 58 τ.μ.",
-   "date": "2026-11-16T13:18:51",
+   "date": "2026-11-17T13:18:48",
    "purpose": "sale",
    "types": [
     "commercial",
@@ -937,7 +937,7 @@
    "id": 55084,
    "url": "https://www.remax-deltaktima.gr/properties/shop-58-sq-m-for-rent/",
    "title": "ΕΝΟΙΚΙΑΖΕΤΑΙ κατά αποκλειστικότητα διαμπερές εμπορικό κατάστημα συνολικής επιφάνειας 58 τ.μ.",
-   "date": "2026-11-16T13:18:51",
+   "date": "2026-11-17T13:18:48",
    "purpose": "rent",
    "types": [
     "commercial",
@@ -971,7 +971,7 @@
    "id": 55040,
    "url": "https://www.remax-deltaktima.gr/properties/plot-175-sq-m-for-sale/",
    "title": "ΠΩΛΕΙΤΑΙ κατά αποκλειστικότητα οικόπεδο συνολικής επιφάνειας 175 τ.μ.",
-   "date": "2026-11-16T13:18:50",
+   "date": "2026-11-17T13:18:47",
    "purpose": "sale",
    "types": [
     "land",
@@ -999,7 +999,7 @@
    "id": 54912,
    "url": "https://www.remax-deltaktima.gr/properties/apartment-58-sq-m-for-sale/",
    "title": "ΠΩΛΕΙΤΑΙ κατά αποκλειστικότητα ανακαινισμένο διαμέρισμα στον 2ο όροφο συνολικής επιφάνειας 58 τ.μ.",
-   "date": "2026-11-16T13:18:50",
+   "date": "2026-11-17T13:18:47",
    "purpose": "sale",
    "types": [
     "apartments",
@@ -1035,7 +1035,7 @@
    "id": 54909,
    "url": "https://www.remax-deltaktima.gr/properties/shop-75-sq-m-for-rent/",
    "title": "ΕΝΟΙΚΙΑΖΕΤΑΙ κατά αποκλειστικότητα κατάστημα ισόγειο συνολικής επιφάνειας 70 τ.μ.",
-   "date": "2026-11-16T13:18:49",
+   "date": "2026-11-17T13:18:46",
    "purpose": "rent",
    "types": [
     "commercial",
@@ -1071,7 +1071,7 @@
    "id": 54911,
    "url": "https://www.remax-deltaktima.gr/properties/building-80-sq-m-for-rent/",
    "title": "ΕΝΟΙΚΙΑΖΕΤΑΙ κατά αποκλειστικότητα κτίριο επαγγελματικό ισόγειο συνολικής επιφάνειας 80 τ.μ.",
-   "date": "2026-11-16T13:18:49",
+   "date": "2026-11-17T13:18:46",
    "purpose": "rent",
    "types": [
     "commercial",
@@ -1101,7 +1101,7 @@
    "id": 54907,
    "url": "https://www.remax-deltaktima.gr/properties/plot-504-sq-m-for-sale/",
    "title": "ΠΩΛΕΙΤΑΙ κατά αποκλειστικότητα οικόπεδο συνολικής επιφάνειας 504 τ.μ.",
-   "date": "2026-11-16T13:18:48",
+   "date": "2026-11-17T13:18:45",
    "purpose": "sale",
    "types": [
     "land",
